@@ -151,3 +151,7 @@ pub fn clean(c: &str) -> &str {
     c.trim()
 }
 ```
+
+### Aula 7
+
+Funções.
