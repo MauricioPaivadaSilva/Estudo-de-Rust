@@ -17,6 +17,7 @@ Comandos estudados:
 | `rustc` | Compila o arquivo do rust. |
 | `cargo new` | Cria um novo projeto usando o gerenciador `cargo`. |
 | `cargo run` | Compila e executa o programa rm Rust.|
+| `cargo fmt` | Formata todo o código, deixando mais legível. |
 
 ### Aula 2:
 
@@ -93,3 +94,13 @@ P.S.: Caso não esteja explícito o tipo inteiro que será utilizado, o Rust ass
 #### Tipo composto **Matriz**
 
 * Ná matriz só pode ser adicionados tipos iguais.
+
+### Aula 4
+
+Aula sobre memória em Rust.
+
+Comandos estudados:
+| Comando | Ação |
+|---|---|
+| `static` | Define uma variável que será armazenada de forma estática dentro do binário final do programa. |
+| `let` | Armazena as variáveis na stack (tamanho dinâmico). |
