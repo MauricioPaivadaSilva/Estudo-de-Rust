@@ -104,3 +104,20 @@ Comandos estudados:
 |---|---|
 | `static` | Define uma variável que será armazenada de forma estática dentro do binário final do programa. |
 | `let` | Armazena as variáveis na stack (tamanho dinâmico). |
+
+### Aula 5
+
+Aula sobre textos e caracteres em Rust.
+
+* hexdump: Programa para fazer debug em baixo nível, o hexadecimal do executável. Auxilia em debug.
+
+Comandos estudados:
+| Comando | Ação |
+|---|---|
+| `&str` | String "slice" (string reference). |
+| `String::new()` | Cria uma String dentro da HEAP (de tamanho dinâmico) **Tem que usar o `mut`**. |
+| `variave.push()` | Adiciona caracteres ('') a String. |
+| `variavel.push_str()` | Adiciona palavra ("") a String. |
+| `"".to_string()` | Cria um objeto com tipo String. |
+| `String::from("")` | Cria uma String a partir de outra. |
+| `String::from_iter(variavel)` | Cria uma String a partir de um objeto iterável. |
