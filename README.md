@@ -121,3 +121,33 @@ Comandos estudados:
 | `"".to_string()` | Cria um objeto com tipo String. |
 | `String::from("")` | Cria uma String a partir de outra. |
 | `String::from_iter(variavel)` | Cria uma String a partir de um objeto iterável. |
+
+### Aula 6
+
+Perguntas.
+
+Comandos estudados:
+| Comando | Ação |
+|---|---|
+| `cargo --release` | Compila para distribuição. |
+| `.len()` | Retorna a quantidade de char presentes. |
+| `.trim()` | Remove char especiais (do começo e do final). |
+
+1. É igual a (2)
+
+```rust
+let nums: Vec<&str> = valores.split(",").map(|c| c.trim()).collect();
+```
+
+2. 
+```rust
+fn main(){
+    ...
+    let nums: Vec<&str> = valores.split(",").map(clean).collect();
+    ...
+}
+
+pub fn clean(c: &str) -> &str {
+    c.trim()
+}
+```
