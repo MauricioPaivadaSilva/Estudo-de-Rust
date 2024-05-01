@@ -10,8 +10,11 @@ fn main() {
         .read_line(&mut valores)
         .expect("\n\tErro na incerção dos valores\n\t");
 
-    let nums: Vec<f32> = valores
-        .split(" ")
-        .map(|c| c.trim().parce().expect("\n\tErr in parce\n"))
-        .collect();
+    if '+' in valores {
+        println!("\n\t Encontrado +\n\t")
+    } else{
+        println!("\n\tDeu ruim\n\t")
+    }
+
+    println!("{:?}", nums);
 }
