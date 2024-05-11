@@ -155,3 +155,7 @@ pub fn clean(c: &str) -> &str {
 ### Aula 7
 
 Funções.
+
+### Aula 8
+
+Ownership & Borrowing
