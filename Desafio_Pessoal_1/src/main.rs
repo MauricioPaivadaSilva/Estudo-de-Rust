@@ -13,13 +13,13 @@ fn main() {
     let nums: Vec<&str> = valores.split(" ").map(|n| n.trim()).collect();
 
     let mut local = 0;
-    let mut soma = 0;
+    let mut soma: i32 = 0;
 
     for n in nums.clone().into_iter() {
         if n == "+" {
             soma = nums[local-1].parse::<i32>().unwrap() + nums[local+1].parse::<i32>().unwrap();
-        } else {
-            println!("\n\tAinda não planejado");
+        } else if n == "-" {
+            soma = nums[local-1].parse::<i32>().unwrap() - nums[local+1].parse::<i32>().unwrap();
         }
         local += 1;
     }
