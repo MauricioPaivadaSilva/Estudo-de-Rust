@@ -3,7 +3,9 @@ use std::io;
 fn main() {
     println!("\n{:=^40}", "Calculadora");
 
-    println!("\nDigite os valores que deseja operar (separados pelo tipo de operação e por espaço): ");
+    println!(
+        "\nDigite os valores que deseja operar (separados pelo tipo de operação e por espaço): "
+    );
 
     let mut valores = String::new();
     io::stdin()
@@ -17,9 +19,11 @@ fn main() {
 
     for n in nums.clone().into_iter() {
         if n == "+" {
-            soma = nums[local-1].parse::<i32>().unwrap() + nums[local+1].parse::<i32>().unwrap();
+            soma =
+                nums[local - 1].parse::<i32>().unwrap() + nums[local + 1].parse::<i32>().unwrap();
         } else if n == "-" {
-            soma = nums[local-1].parse::<i32>().unwrap() - nums[local+1].parse::<i32>().unwrap();
+            soma =
+                nums[local - 1].parse::<i32>().unwrap() - nums[local + 1].parse::<i32>().unwrap();
         }
         local += 1;
     }
